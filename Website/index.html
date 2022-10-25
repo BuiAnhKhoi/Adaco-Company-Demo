@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADACO COMPANY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header__notAccount">
+        <div class="header1">
+            <div class="header1__inner">
+                <div class="header__brand">
+                    <div class="brand__name">
+                        <a href="#">Công ty TNHH ADACO</a>
+                    </div>
+                    <img class="header_logo" src="assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco Company" width="70" height="70">
+                </div>
+                <div class="header__search">
+                    <!-- Link to icon8 icon search -->
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Search icon" onclick="processDev();">
+                    <input type="text" placeholder="Tìm kiếm ..." maxlength="50" onkeypress="processDev();">
+                </div>
+                <div class="header1__menu">
+                    <ul class="header1__item">
+                        <li class="header__signin"><a href="#" class="header1__link" onclick="processDev();">Đăng nhập</a></li>
+                        <li class="header__signup"><a href="#" class="header1__link" onclick="processDev();">Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="header2__inner">
+                <div class="header__breadcrum">
+                    <p>Trang chủ</p>
+                </div>
+                <div class="header2__menu">
+                    <ul class="header2__item">
+                        <li class="header__homepage">
+                            <a href="#" class="header2__link">Trang chủ</a>
+                        </li>
+                        <li class="header__products">
+                            <a href="#" class="header2__link" onclick="processDev();">Sản phẩm</a>
+                        </li>
+                        <li class="header__contact">
+                            <a href="#" class="header2__link"onclick="processDev();">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- content page -->
+    <div class="slideshow__images">
+        <div class="slideshow__image">
+            <img src="assets/images/Slideshow-Image-1.JPG" alt="Image Slideshow 1" class="slideshow__item">
+            <img src="assets/images/Slideshow-Image-2.JPG" alt="Image Slideshow 2" class="slideshow__item">
+            <img src="assets/images/Slideshow-Image-3.JPG" alt="Image Slideshow 3" class="slideshow__item">
+            <img src="assets/images/Slideshow-Image-4.JPG" alt="Image Slideshow 4" class="slideshow__item">
+        </div>
+
+        <button class="slideshow__button slideshow__button-left" onclick="slideShowButton(-1)">&#10094</button>
+        <button class="slideshow__button slideshow__button-right" onclick="slideShowButton(+1)">&#10095</button>
+    </div>
+
+    <div class="top__products">
+        <div class="infor__top__products">
+            <div class="text__top__products">
+                <h3>Sản phẩm nổi bật</h3>
+                <h6 id="subtitle__top__products">Những sản phẩm được lựa chọn mua nhiều nhất</h6>
+            </div>
+            <button type="button" class="more_product__btn" onclick="processDev();">
+                <a href="#" class="more_product__link">Xem thêm</a>
+            </button>
+        </div>
+        <div class="top__product__list">
+            <div class="card__product">
+                <img src="assets/images/Product-image.jpg" alt="product image" class="card__image">
+                <h5>Sản phẩm 1</h5>
+                <h3>000.000đ</h3>
+            </div>
+            <div class="card__product">
+                <img src="assets/images/Product-image.jpg" alt="product image" class="card__image">
+                <h5>Sản phẩm 1</h5>
+                <h3>000.000đ</h3>
+            </div>
+            <div class="card__product">
+                <img src="assets/images/Product-image.jpg" alt="product image" class="card__image">
+                <h5>Sản phẩm 1</h5>
+                <h3>000.000đ</h3>
+            </div>
+            <div class="card__product">
+                <img src="assets/images/Product-image.jpg" alt="product image" class="card__image">
+                <h5>Sản phẩm 1</h5>
+                <h3>000.000đ</h3>
+            </div>
+            <div class="card__product">
+                <img src="assets/images/Product-image.jpg" alt="product image" class="card__image">
+                <h5>Sản phẩm 1</h5>
+                <h3>000.000đ</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="about__company">
+        <div class="about__company__tab">
+            <button id="defaultOpenTab" class="about__company__link" onclick="aboutCompany(event,'About')">Về chúng tôi</button>
+            <button class="about__company__link" onclick="aboutCompany(event,'View')">Tầm nhìn</button>
+            <button class="about__company__link" onclick="aboutCompany(event,'Mission')">Sứ mệnh</button>
+        </div>
+        <div id="About" class="content__tab">
+            <h3>Công ty TNHH Adaco</h3>
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iure? </li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, labore.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, soluta.</li>
+            <ul>
+        </div>
+        <div id="View" class="content__tab">
+            <h3>Công ty lớn mạnh</h3>
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iure? </li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, labore.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, soluta.</li>
+            <ul>
+        </div>
+        <div id="Mission" class="content__tab">
+            <h3>Cung cấp sản phẩm tốt</h3>
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iure? </li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, labore.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, soluta.</li>
+            <ul>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer1">
+            <div class="footer1__inner">
+                <div class="footer__brand">
+                    <img src="assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco" class="footer__logo">
+                    <p>CÔNG TY TNHH ADACO</p>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__address1">
+                        <div class="footer_addressNumberPhone">
+                            <p class="footer_addressTitle">Số điện thoại</p>
+                            <p>+84 123 456 789</p>
+                        </div>
+                        <div class="footer_addressGmail">
+                            <p class="footer_addressTitle">Gmail</p>
+                            <p>alice[@]google[.]com</p>
+                        </div>
+                        <div class="footer_addressWebsite">
+                            <p class="footer_addressTitle">Website</p>
+                            <a href="../index.html">http:[://]adaco[.]com[.]vn</a>
+                        </div>
+                    </div>
+                    <div class="footer_address2">
+                        <p class="footer_addressTitle">Địa chỉ</p>
+                        <p>523A đường Đỗ Xuân Hợp, Phường Phước Long B, Quận 9, TP.HCM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="footer2__inner">
+                <div class="footer__contribute">
+                    <ul class="contribute__list">
+                        <li class="contribute__item">Using icon search at : <a target="_blank" href="https://icons8.com/icon/59878/search">Search icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon facebook at : <a target="_blank" href="https://icons8.com/icon/118466/facebook">Facebook icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon youtube at : <a target="_blank" href="https://icons8.com/icon/62852/youtube">YouTube icon by Icons8</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"/></a>
+                    <a href="https://www.youtube.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
