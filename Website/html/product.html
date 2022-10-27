@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header__notAccount">
+            <div class="header1">
+                <div class="header1__inner">
+                    <div class="header__brand">
+                        <div class="brand__name">
+                            <a href="#">Công ty TNHH ADACO</a>
+                        </div>
+                        <img class="header_logo" src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco Company" width="70" height="70">
+                    </div>
+                    <div class="header__search">
+                        <!-- Link to icon8 icon search -->
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Search icon" onclick="processDev();">
+                        <input type="text" placeholder="Tìm kiếm ..." maxlength="50" onkeypress="processDev();">
+                    </div>
+                    <div class="header1__menu">
+                        <ul class="header1__item">
+                            <li class="header__signin"><a href="#" class="header1__link" onclick="processDev();">Đăng nhập</a></li>
+                            <li class="header__signup"><a href="#" class="header1__link" onclick="processDev();">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header2">
+                <div class="header2__inner">
+                    <div class="header__breadcrum">
+                        <p>Sản phẩm</p>
+                    </div>
+                    <div class="header2__menu">
+                        <ul class="header2__item">
+                            <li class="header__homepage">
+                                <a href="../index.html" class="header2__link">Trang chủ</a>
+                            </li>
+                            <li class="header__products">
+                                <a href="html/product.html" class="header2__link">Sản phẩm</a>
+                            </li>
+                            <li class="header__contact">
+                                <a href="contact.html" class="header2__link" >Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <div class="product">
+        <div class="product__inner">
+            <p>Sắp xếp theo</p>
+            <div class="product__filter">
+                <button type="button" onclick="priceTopToDown();">
+                    <div class="filter__priceHighToLow">
+                        <img src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/24/000000/external-arrow-down-arrow-line-royyan-wijaya-detailed-outline-royyan-wijaya.png"/>
+                        <p>Giá Cao - Thấp</p>
+                    </div>
+                </button>
+                <button type="button" onclick="priceDownUpTop();">
+                    <div class="filter__priceLowToHigh">
+                        <img src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/24/000000/external-arrow-down-arrow-line-royyan-wijaya-detailed-outline-royyan-wijaya.png"/>
+                        <p>Giá Thấp - Cao</p>
+                    </div>
+                </button>
+                <button type="button">
+                    <div class="filter__mostWatch">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/visible.png"/>
+                        <p>Xem nhiều</p>
+                    </div>
+                </div>
+            </button>
+            <div class="all__products">
+                <!-- <div class="card__item">
+                    <img src="../assets/images/Product-image.jpg" alt="product image" class="card__imageItem">
+                    <h5>Sản phẩm 1</h5>
+                    <h3>000.000đ</h3>
+                </div>                     -->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer1">
+            <div class="footer1__inner">
+                <div class="footer__brand">
+                    <img src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco" class="footer__logo">
+                    <p><a href="../index.html">CÔNG TY TNHH ADACO</a></p>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__address1">
+                        <div class="footer_addressNumberPhone">
+                            <p class="footer_addressTitle">Số điện thoại</p>
+                            <p>+84 123 456 789</p>
+                        </div>
+                        <div class="footer_addressGmail">
+                            <p class="footer_addressTitle">Gmail</p>
+                            <p>alice[@]google[.]com</p>
+                        </div>
+                        <div class="footer_addressWebsite">
+                            <p class="footer_addressTitle">Website</p>
+                            <a href="../index.html">http:[://]adaco[.]com[.]vn</a>
+                        </div>
+                    </div>
+                    <div class="footer_address2">
+                        <p class="footer_addressTitle">Địa chỉ</p>
+                        <p>523A đường Đỗ Xuân Hợp, Phường Phước Long B, Quận 9, TP.HCM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="footer2__inner">
+                <div class="footer__contribute">
+                    <ul class="contribute__list">
+                        <li class="contribute__item">Using icon search at : <a target="_blank" href="https://icons8.com/icon/59878/search">Search icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon facebook at : <a target="_blank" href="https://icons8.com/icon/118466/facebook">Facebook icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon youtube at : <a target="_blank" href="https://icons8.com/icon/62852/youtube">YouTube icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon down arrow at : <a target="_blank" href="https://icons8.com/icon/g3LtVzUgkyzp/arrow-down">Arrow Down icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon open eye at : <a target="_blank" href="https://icons8.com/icon/85028/eye">Eye icon by Icons8</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"/></a>
+                    <a href="https://www.youtube.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/getAllProducts.js"></script>
+</body>
+</html>

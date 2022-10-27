@@ -42,10 +42,11 @@ footer {
     border: 1px solid black;
 }
 
-.footer__brand p {
+.footer__brand p a {
     font-size: 26px;
     font-weight: bold;
     color: black;
+    text-decoration: none;
 }
 
 .footer__address1 {

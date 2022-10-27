@@ -1,6 +1,10 @@
 var slideshowImageIndex = 1;
 var autoSlideshowImageIndex = 0;
 var getCurrentWidth = screen.width;
+var getAllProducts = document.getElementsByClassName("all__products")[0];
+
+autoSlideshowShow();
+slideshowShow(slideshowImageIndex);
 
 if (getCurrentWidth < 320) {
     document.getElementsByTagName("body")[0].style.display = "none";
@@ -8,9 +12,6 @@ if (getCurrentWidth < 320) {
 }
 
 document.getElementById("defaultOpenTab").click();
-
-autoSlideshowShow();
-slideshowShow(slideshowImageIndex);
 
 function slideShowButton(parameterSlideshow) {
     slideshowShow(slideshowImageIndex = slideshowImageIndex + parameterSlideshow);
@@ -67,4 +68,7 @@ function aboutCompany(evt,tabName){
 function processDev() {
     alert('Tính năng đang phát triển, quay lại sau');
 }
+
+
+
 
