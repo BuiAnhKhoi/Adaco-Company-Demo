@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    width: 100%;
+}
+.footer1 {
+    width:100%;
+    height: 450px;
+    background-color: rgba(217, 217, 217, 50%);
+    border:none;
+    outline: none;
+}
+
+.footer2 {
+    height: 100px;
+    background-color: rgba(5, 0, 255,80%);
+}
+
+.footer1__inner {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__brand img {
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.footer__brand p a {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.footer__address1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer_addressGmail, .footer_addressWebsite {
+    margin-left: 30px;
+}
+
+.footer_addressTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer2__inner {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contribute__list {
+    list-style-type: none;
+}
+
+.contribute__item {
+    color:white;
+}
+
+.contribute__list li a {
+    color: white;
+}
+
+.footer__social img {
+    background-color:white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:1280px) {
+    .footer__logo {
+        width: 70px;
+        height: 70px;
+    }
+    .footer__brand p {
+        font-size:20px
+    }
+}
+
+@media only screen and (max-width:1080px) {
+    .footer1__inner {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .footer__address1 {
+        flex-direction: column;
+    }
+
+    .footer_addressGmail, .footer_addressWebsite {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .footer2__inner {
+        flex-direction: column;
+    }
+    .footer2 {
+        height: 100%;
+    }
+    .footer__contribute {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

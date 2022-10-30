@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header__notAccount">
+        <div class="header1">
+            <div class="header1__inner">
+                <div class="header__brand">
+                    <div class="brand__name">
+                        <a href="../index.html">Công ty TNHH ADACO</a>
+                    </div>
+                    <img class="header_logo" src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco Company" width="70" height="70">
+                </div>
+                <div class="header__search">
+                    <!-- Link to icon8 icon search -->
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Search icon" onclick="processDev();">
+                    <input type="text" placeholder="Tìm kiếm ..." maxlength="50" onkeypress="processDev();">
+                </div>
+                <div class="header1__menu">
+                    <ul class="header1__item">
+                        <li class="header__signin"><a href="#" class="header1__link" onclick="processDev();">Đăng nhập</a></li>
+                        <li class="header__signup"><a href="#" class="header1__link" onclick="processDev();">Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="header2__inner">
+                <div class="header__breadcrum">
+                    <p>Liên hệ</p>
+                </div>
+                <div class="header2__menu">
+                    <ul class="header2__item">
+                        <li class="header__homepage">
+                            <a href="../index.html" class="header2__link">Trang chủ</a>
+                        </li>
+                        <li class="header__products">
+                            <a href="product.html" class="header2__link">Sản phẩm</a>
+                        </li>
+                        <li class="header__contact">
+                            <a href="#" class="header2__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact">
+        <div class="contact__inner">
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31351.371221955702!2d106.76216111784545!3d10.817326806793188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526f07f6e787f%3A0x28314d3c3c460662!2zUGjGsOG7m2MgTG9uZyBCLCBRdeG6rW4gOSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1666790225374!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact__infor">
+                <div class="contact__address">
+                    <h3>Địa  chỉ</h3>
+                    <p>21 đường D20, phường Phước Long B, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</p>
+                </div>
+                <div class="contact__telephoneNumber">
+                    <h3>Số điện thoại</h3>
+                    <p>+84 822 971 247</p>
+                </div>
+                <div class="contact__email">
+                    <h3>Gmail</h3>
+                    <p>alice.adaco@gmail.com</p>
+                </div>
+                <div class="contact__website">
+                    <h3>Website</h3>
+                    <p><a href="../index.html">Adaco company</a></p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="contact__inner2">
+            <div class="send__question">
+                <p id="send__questionTitle">GỬI HỘ TRỢ</p>
+                <div class="send__questionInner">
+                    <div class="require__infor">
+                        <div class="require__Name">
+                            <p>HỌ VÀ TÊN <span>(bắt buộc)</span></p>
+                            <input type="text" maxlength="50">
+                        </div>
+                        <div class="require__NumberPhone">
+                            <p>SĐT <span>(tùy chọn)</span></p>
+                            <input type="text" maxlength="50">
+                        </div>
+                        <div class="require__Email">
+                            <p>Email <span>(bắt buộc)</span></p>
+                            <input type="text" maxlength="50">
+                        </div>
+                    </div>
+                    <div class="require__content">
+                        <p>NỘI DUNG<span> (bắt buộc)</span></p>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <button id="button__sendQuestion" type="submit" onclick="processDev();">GỬI CHO CHÚNG TÔI</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer1">
+            <div class="footer1__inner">
+                <div class="footer__brand">
+                    <img src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco" class="footer__logo">
+                    <p><a href="../index.html">CÔNG TY TNHH ADACO</a></p>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__address1">
+                        <div class="footer_addressNumberPhone">
+                            <p class="footer_addressTitle">Số điện thoại</p>
+                            <p>+84 123 456 789</p>
+                        </div>
+                        <div class="footer_addressGmail">
+                            <p class="footer_addressTitle">Gmail</p>
+                            <p>alice[@]google[.]com</p>
+                        </div>
+                        <div class="footer_addressWebsite">
+                            <p class="footer_addressTitle">Website</p>
+                            <a href="../index.html">http:[://]adaco[.]com[.]vn</a>
+                        </div>
+                    </div>
+                    <div class="footer_address2">
+                        <p class="footer_addressTitle">Địa chỉ</p>
+                        <p>523A đường Đỗ Xuân Hợp, Phường Phước Long B, Quận 9, TP.HCM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="footer2__inner">
+                <div class="footer__contribute">
+                    <ul class="contribute__list">
+                        <li class="contribute__item">Using icon search at : <a target="_blank" href="https://icons8.com/icon/59878/search">Search icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon facebook at : <a target="_blank" href="https://icons8.com/icon/118466/facebook">Facebook icon by Icons8</a></li>
+                        <li class="contribute__item">Using icon youtube at : <a target="_blank" href="https://icons8.com/icon/62852/youtube">YouTube icon by Icons8</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"/></a>
+                    <a href="https://www.youtube.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/minimumWidth.js"></script>
+    <script src="../js/processDev.js"></script>
+</body>
+</html>
