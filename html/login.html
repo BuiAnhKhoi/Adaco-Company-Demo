@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact page</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="header1__menu">
                     <ul class="header1__item">
-                        <li class="header__signin"><a href="login.html" class="header1__link" onclick="processDev();">Đăng nhập</a></li>
+                        <li class="header__signin"><a href="#" class="header1__link" onclick="processDev();">Đăng nhập</a></li>
                         <li class="header__signup"><a href="signup.html" class="header1__link" onclick="processDev();">Đăng ký</a></li>
                     </ul>
                 </div>
@@ -33,7 +33,7 @@
         <div class="header2">
             <div class="header2__inner">
                 <div class="header__breadcrum">
-                    <p>Liên hệ</p>
+                    <p>Đăng nhập</p>
                 </div>
                 <div class="header2__menu">
                     <ul class="header2__item">
@@ -44,7 +44,7 @@
                             <a href="product.html" class="header2__link">Sản phẩm</a>
                         </li>
                         <li class="header__contact">
-                            <a href="#" class="header2__link">Liên hệ</a>
+                            <a href="contact.html" class="header2__link" >Liên hệ</a>
                         </li>
                     </ul>
                 </div>
@@ -52,57 +52,31 @@
         </div>
     </header>
 
-    <div class="contact">
-        <div class="contact__inner">
-            <div class="contact__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31351.371221955702!2d106.76216111784545!3d10.817326806793188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526f07f6e787f%3A0x28314d3c3c460662!2zUGjGsOG7m2MgTG9uZyBCLCBRdeG6rW4gOSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1666790225374!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="contact__infor">
-                <div class="contact__address">
-                    <h3>Địa  chỉ</h3>
-                    <p>21 đường D20, phường Phước Long B, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</p>
-                </div>
-                <div class="contact__telephoneNumber">
-                    <h3>Số điện thoại</h3>
-                    <p>+84 822 971 247</p>
-                </div>
-                <div class="contact__email">
-                    <h3>Gmail</h3>
-                    <p>alice.adaco@gmail.com</p>
-                </div>
-                <div class="contact__website">
-                    <h3>Website</h3>
-                    <p><a href="../index.html">Adaco company</a></p>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="contact__inner2">
-            <div class="send__question">
-                <p id="send__questionTitle">GỬI HỘ TRỢ</p>
-                <div class="send__questionInner">
-                    <div class="require__infor">
-                        <div class="require__Name">
-                            <p>HỌ VÀ TÊN <span>(bắt buộc)</span></p>
-                            <input type="text" maxlength="50" id="NameSupport">
-                        </div>
-                        <div class="require__NumberPhone">
-                            <p>SĐT <span>(tùy chọn)</span></p>
-                            <input type="text" maxlength="50" id="NumberPhoneSupport">
-                        </div>
-                        <div class="require__Email">
-                            <p>Email <span>(bắt buộc)</span></p>
-                            <input type="text" maxlength="50" id="EmailSupport">
-                        </div>
+    <!-- content page -->
+    <div>
+        <div class="login__inner">
+            <p id="login__title">ĐĂNG NHẬP</p>
+            <div class="login__form">
+                <div class="login__formInner">
+                    <div class="username__login">
+                        <p id="username__title">TÊN ĐĂNG NHẬP<i> (bắt buộc )</i></p>
+                        <input type="text" maxlength="15" class="input__form">
                     </div>
-                    <div class="require__content">
-                        <p>NỘI DUNG<span> (bắt buộc)</span></p>
-                        <textarea id="contentSupport"></textarea>
+                    <div class="password__login">
+                        <p id="password__title">MẬT KHẨU<i><small> (bắt buộc )</small></i></p>
+                        <input type="password" class="input__form">
                     </div>
                 </div>
-                <button id="button__sendQuestion" type="submit" onclick="sendSupport();">GỬI CHO CHÚNG TÔI</button>
+                <p>Lưu ý : Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, est.</p>
+            </div>
+
+            <div class="btn__login">
+                <button type="button">Đăng nhập</button>
+            </div>
+            <div class="expand__infor">
+                <p>Bằng việc ấn vào nút đăng nhập, bạn đồng ý với điều khoản của công ty chúng tôi <a href="">điều khoản</a></p>
+                <a href="#">Bạn quên mật khẩu ?</a>
+                <p>Bạn chưa có tài khoản ? <a href="signup.html">Tạo toài khoản</a></p>
             </div>
         </div>
     </div>
@@ -113,7 +87,7 @@
             <div class="footer1__inner">
                 <div class="footer__brand">
                     <img src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco" class="footer__logo">
-                    <p><a href="../index.html">CÔNG TY TNHH ADACO</a></p>
+                    <p><a href="index.html">CÔNG TY TNHH ADACO</a></p>
                 </div>
                 <div class="footer__address">
                     <div class="footer__address1">
@@ -154,8 +128,7 @@
         </div>
     </footer>
 
+    <script src="../js/index.js"></script>
     <script src="../js/minimumWidth.js"></script>
-    <script src="../js/processDev.js"></script>
-    <script src="../js/sendSupport.js"></script>
 </body>
 </html>

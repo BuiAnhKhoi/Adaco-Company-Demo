@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="signup">
+        <div class="signup__inner">
+            <p id="signup__title">ĐĂNG KÝ</p>
+            <div class="signup__form">
+                <div class="general__form email__form">
+                    <p>Email <i>( bắt buộc )</i></p>
+                    <input type="email">
+                </div>
+                <div class="general__form telephoneNumber__form">
+                    <p>Số Điện Thoại <i>( bắt buộc )</i></p>
+                    <input type="tel">
+                </div>
+                <div class="general__form name__form">
+                    <p>Tên người sử dụng <i>( bắt buộc )</i></p>
+                    <input type="text" maxlength="15">
+                </div>
+                <div class="general__form birthday__form">
+                    <p>Ngày tháng năm sinh <i>(tùy chọn)</i></p>
+                    <div class="choose__birthday">
+                        <div class="choose__day">
+                            <p>Ngày :</p>
+                            <input type="tel" maxlength="2">
+                        </div>
+                        <div class="choose_month">
+                            <p>Tháng :</p>
+                            <input type="tel" maxlength="2">
+                        </div>
+                        <div class="choose__year">
+                            <p>Năm :</p>
+                            <input type="tel" maxlength="4">
+                        </div>
+                    </div>
+                </div>
+                <div class="general__form username__form">
+                    <p>Tên đăng nhập <i>( bắt buộc )</i></p>
+                    <input type="text" maxlength="20">
+                </div>
+                <div class="general__form password__form">
+                    <p>Nhập mật khẩu <i>( bắt buộc)</i></p>
+                    <input type="password" maxlength="30">
+                </div>
+                <div class="general__form repassword__form">
+                    <p>Nhập lại mật khẩu <i>( bắt buộc)</i></p>
+                    <input type="password" maxlength="30">
+                </div>
+            </div>
+            <div id="notice__information">
+                <i>
+                ( Lưu ý : Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus praesentium molestiae iusto, tempore doloremque sint? )
+                </i>
+            </div>
+            <div class="avatar__account">
+                <p id="avatar__title">AVATAR</p>
+                <div id="avatar__image"></div>
+                <div class="choose__avatar">
+                    <button type="button" id="upload__avatar">TẢI LÊN</button>
+                    <button type="button" id="random__avatar">NGẪU NHIÊN</button>
+                </div>
+            </div>
+            <div id="btn__signup"><button>ĐĂNG KÝ</button></div>
+        </div>
+    </div>
+    <p id="to__homepage"><a href="../index.html">Quay lại trang chủ</a></p>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
