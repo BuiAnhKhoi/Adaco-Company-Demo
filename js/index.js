@@ -6,7 +6,7 @@ slideshowShow(slideshowImageIndex);
 
 document.getElementById("defaultOpenTab").click();
  
-setInterval( ()=>{document.getElementById('localTime').innerText = new Date().toLocaleTimeString()}, 1000)
+// setInterval( ()=>{document.getElementById('localTime').innerText = new Date().toLocaleTimeString()}, 1000)
 function slideShowButton(parameterSlideshow) {
     slideshowShow(slideshowImageIndex = slideshowImageIndex + parameterSlideshow);
 }
