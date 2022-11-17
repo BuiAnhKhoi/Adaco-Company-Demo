@@ -17,10 +17,19 @@
     justify-content: center;
 }
 
+/* .slideshow__image:hover {
+    opacity: 0.5;
+} */
+
 .slideshow__item {
     height: auto;
     width: auto;
     max-width: 75%;
+}
+
+.slideshow__item:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .slideshow__button {
@@ -76,6 +85,11 @@
 .more_product__link {
     text-decoration: none;
     color:white;
+    font-weight: lighter;
+}
+
+.more_product__link:hover {
+    font-weight: bolder;
 }
 
 #subtitle__top__products {
@@ -92,6 +106,10 @@
     width: 15%;
     padding:10px;
     
+}
+
+.card__product:hover {
+    border: 1px solid black;
 }
 
 .card__image {

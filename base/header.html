@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Header</title>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <header class="header__notAccount">
+        <div class="header1">
+            <div class="header1__inner">
+                <div class="header__brand">
+                    <div class="brand__name">
+                        <a href="../index.html">Công ty TNHH ADACO</a>
+                    </div>
+                    <img class="header_logo" src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco Company" width="70" height="70">
+                </div>
+                <div class="header__search">
+                    <!-- Link to icon8 icon search -->
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Search icon" onclick="processDev();">
+                    <input type="text" placeholder="Tìm kiếm ..." maxlength="50" id="searchProduct" oninput="searchInput()" onfocusin="focusSearchInput()" onblur="blurSearchInput()">
+                    <div class="search__result">Result is :<br></div>
+                </div>
+                <div class="header1__menu">
+                    <ul class="header1__item">
+                        <li class="header__signin"><a href="../html/login.html" class="header1__link">Đăng nhập</a></li>
+                        <li class="header__signup"><a href="../html/signup.html" class="header1__link">Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="header2__inner">
+                <div class="header__breadcrumb">
+                    <p id="breadcrumb__title">Trang chủ</p>
+                </div>
+                <p id="localTime"></p>
+                <div class="header2__menu">
+                    <ul class="header2__item">
+                        <li class="header__homepage">
+                            <a href="../index.html" class="header2__link">Trang chủ</a>
+                        </li>
+                        <li class="header__products">
+                            <a href="../html/product.html" class="header2__link">Sản phẩm</a>
+                        </li>
+                        <li class="header__contact">
+                            <a href="../html/contact.html" class="header2__link" >Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="../js/header.js"></script>
+</body>
+</html>

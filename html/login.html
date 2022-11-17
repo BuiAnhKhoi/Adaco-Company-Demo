@@ -4,53 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#header").load("../base/header.html")
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#footer").load("../base/footer.html")
+        });
+    </script>
 </head>
 <body>
     <!-- header -->
-    <header class="header__notAccount">
-        <div class="header1">
-            <div class="header1__inner">
-                <div class="header__brand">
-                    <div class="brand__name">
-                        <a href="../index.html">Công ty TNHH ADACO</a>
-                    </div>
-                    <img class="header_logo" src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco Company" width="70" height="70">
-                </div>
-                <div class="header__search">
-                    <!-- Link to icon8 icon search -->
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Search icon" onclick="processDev();">
-                    <input type="text" placeholder="Tìm kiếm ..." maxlength="50" onkeypress="processDev();">
-                </div>
-                <div class="header1__menu">
-                    <ul class="header1__item">
-                        <li class="header__signin"><a href="#" class="header1__link" onclick="processDev();">Đăng nhập</a></li>
-                        <li class="header__signup"><a href="signup.html" class="header1__link" onclick="processDev();">Đăng ký</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="header2">
-            <div class="header2__inner">
-                <div class="header__breadcrum">
-                    <p>Đăng nhập</p>
-                </div>
-                <div class="header2__menu">
-                    <ul class="header2__item">
-                        <li class="header__homepage">
-                            <a href="../index.html" class="header2__link">Trang chủ</a>
-                        </li>
-                        <li class="header__products">
-                            <a href="product.html" class="header2__link">Sản phẩm</a>
-                        </li>
-                        <li class="header__contact">
-                            <a href="contact.html" class="header2__link" >Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <!-- content page -->
     <div>
@@ -60,18 +34,18 @@
                 <div class="login__formInner">
                     <div class="username__login">
                         <p id="username__title">TÊN ĐĂNG NHẬP<i> (bắt buộc )</i></p>
-                        <input type="text" maxlength="15" class="input__form">
+                        <input type="text" maxlength="15" id="usernameLogin" class="input__form">
                     </div>
                     <div class="password__login">
                         <p id="password__title">MẬT KHẨU<i><small> (bắt buộc )</small></i></p>
-                        <input type="password" class="input__form">
+                        <input type="password" class="input__form" id="passwordLogin">
                     </div>
                 </div>
                 <p>Lưu ý : Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, est.</p>
             </div>
 
             <div class="btn__login">
-                <button type="button">Đăng nhập</button>
+                <button onclick="LoginAccount()">Đăng nhập</button>
             </div>
             <div class="expand__infor">
                 <p>Bằng việc ấn vào nút đăng nhập, bạn đồng ý với điều khoản của công ty chúng tôi <a href="">điều khoản</a></p>
@@ -82,53 +56,10 @@
     </div>
 
     <!-- footer -->
-    <footer>
-        <div class="footer1">
-            <div class="footer1__inner">
-                <div class="footer__brand">
-                    <img src="../assets/images/Logo-Adaco-100x100.png" alt="Logo Adaco" class="footer__logo">
-                    <p><a href="index.html">CÔNG TY TNHH ADACO</a></p>
-                </div>
-                <div class="footer__address">
-                    <div class="footer__address1">
-                        <div class="footer_addressNumberPhone">
-                            <p class="footer_addressTitle">Số điện thoại</p>
-                            <p>+84 123 456 789</p>
-                        </div>
-                        <div class="footer_addressGmail">
-                            <p class="footer_addressTitle">Gmail</p>
-                            <p>alice[@]google[.]com</p>
-                        </div>
-                        <div class="footer_addressWebsite">
-                            <p class="footer_addressTitle">Website</p>
-                            <a href="../index.html">http:[://]adaco[.]com[.]vn</a>
-                        </div>
-                    </div>
-                    <div class="footer_address2">
-                        <p class="footer_addressTitle">Địa chỉ</p>
-                        <p>523A đường Đỗ Xuân Hợp, Phường Phước Long B, Quận 9, TP.HCM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer2">
-            <div class="footer2__inner">
-                <div class="footer__contribute">
-                    <ul class="contribute__list">
-                        <li class="contribute__item">Using icon search at : <a target="_blank" href="https://icons8.com/icon/59878/search">Search icon by Icons8</a></li>
-                        <li class="contribute__item">Using icon facebook at : <a target="_blank" href="https://icons8.com/icon/118466/facebook">Facebook icon by Icons8</a></li>
-                        <li class="contribute__item">Using icon youtube at : <a target="_blank" href="https://icons8.com/icon/62852/youtube">YouTube icon by Icons8</a></li>
-                    </ul>
-                </div>
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"/></a>
-                    <a href="https://www.youtube.com/"><img src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png"/></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
-    <script src="../js/index.js"></script>
+    <script src="../js/login.js"></script>
+    <!-- <script src="../js/index.js"></script> -->
     <script src="../js/minimumWidth.js"></script>
 </body>
 </html>

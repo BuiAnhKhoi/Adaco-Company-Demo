@@ -45,9 +45,21 @@ header {
     background-color: white;
     border:none;
     width: 230px;
-    border-radius: 15px;
+    border-radius: 5px;
     height: 50px;
     position: relative;
+}
+
+.search__result {
+    display: none;
+    position: absolute;
+    width:100%;
+    background-color: white;
+    height: max-content;
+    top: 110%;
+    /* bottom:-100%; */
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .header__search img {
@@ -111,7 +123,7 @@ header {
     margin: 0 auto;
 }
 
-.header__breadcrum p {
+.header__breadcrumb p {
     font-size: 20px;
     /* font-weight: lighter; */
     color: black;
@@ -187,7 +199,7 @@ header {
         font-size: 16px;
     }
 
-    .header__breadcrum, .header2__link {
+    .header__breadcrumb, .header2__link {
         font-size: 16px;
     }
 }
@@ -250,7 +262,7 @@ header {
         margin-left: 0px;
     }
 
-    .header__breadcrum {
+    .header__breadcrumb {
         display: none;
         width: 0%;
     }

@@ -1,3 +1,5 @@
+
+
 function plusUnit (){
     var currentUnit = document.getElementById("value__unit").value;
     let checkCurrentUnit = true;
@@ -52,7 +54,7 @@ function minusUnit (){
 
 
 function changeMainImage(image_position) {
-    let idElements = "image__product"+ image_position;
+    let idElements = "image__product" + image_position;
     let srcImageHighResolution = document.getElementById(idElements).src;
     let srcImageNormalResolution = document.getElementById("detail__image-highResolution").src;
 

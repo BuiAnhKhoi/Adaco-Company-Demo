@@ -5,9 +5,16 @@ autoSlideshowShow();
 slideshowShow(slideshowImageIndex);
 
 document.getElementById("defaultOpenTab").click();
-
+ 
+setInterval( ()=>{document.getElementById('localTime').innerText = new Date().toLocaleTimeString()}, 1000)
 function slideShowButton(parameterSlideshow) {
     slideshowShow(slideshowImageIndex = slideshowImageIndex + parameterSlideshow);
+}
+
+function openProductPage(){
+    let aTagTemp = document.createElement('a')
+    aTagTemp.href = "html/product.html"
+    aTagTemp.click()
 }
 
 function slideshowShow(parameterSlideshow) {
@@ -57,7 +64,3 @@ function aboutCompany(evt,tabName){
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-
-
-
